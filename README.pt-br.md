@@ -10,7 +10,7 @@
 
 <div align="center">
 
-  [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Registro-Ponto/registro-ponto-libs/blob/main/README.md)
+  [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Registro-Ponto/registro-ponto-libs/blob/main/README.md)
 
 </div>
 
