@@ -4,6 +4,16 @@
   </a>
 </div>
 
+<p align="center">
+  <a href="https://registroponto.com.br/" target="_blank">Registro Ponto</a> Libraries offer high-quality icons and illustrations with a modern and sophisticated design, perfect for time management systems and HR applications.
+<p>
+
+<div align="center">
+
+  [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Registro-Ponto/registro-ponto-libs/blob/main/README.pt-br.md)
+
+</div>
+
 ## Icons
 
 First, install `@registroponto/icons` from npm:

@@ -4,6 +4,17 @@
   </a>
 </div>
 
+<p align="center">
+    As Bibliotecas <a href="https://registroponto.com.br/" target="_blank">Registro Ponto</a> oferecem ícones e ilustrações de alta qualidade com design moderno e sofisticado, ideais para sistemas de gestão de ponto e aplicações de recursos humanos.
+<p>
+
+<div align="center">
+
+  [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Registro-Ponto/registro-ponto-libs/blob/main/README.md)
+
+</div>
+
+
 ## Ícones
 
 Primeiramente, instale `@registroponto/icons` via npm:
