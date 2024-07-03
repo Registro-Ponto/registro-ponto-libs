@@ -1,3 +1,5 @@
+let prefixCounter = 0;
+
 export default {
     plugins: [
         {
@@ -10,5 +12,12 @@ export default {
             },
           },
         },
+        {
+          name: 'prefixIds',
+          params: {
+            delim: '',
+            prefix: () => prefixCounter++,
+          }
+        }
       ],
 }
