@@ -5,7 +5,7 @@
 </div>
 
 <p align="center">
-  A biblioteca de ilustrações do <a href="https://registroponto.com.br/" target="_blank">Registro Ponto</a> oferece uma coleção de ilustrações intuitivas projetadas para facilitar a navegação e a usabilidade dos sistemas de gestão de ponto.
+  A biblioteca de ilustrações do <a href="https://registroponto.com.br/" target="_blank">Registro Ponto</a> oferece uma coleção de ilustrações intuitivas projetadas<br /> para facilitar a navegação e a usabilidade dos sistemas de gestão de ponto.
 <p>
 
 <div align="center">
