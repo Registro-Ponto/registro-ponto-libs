@@ -41,6 +41,6 @@ function Exemplo() {
 }
 ```
 
-## License
+## Licença
 
-This library is MIT licensed.
+Esta biblioteca está licenciada sob a licença MIT.
