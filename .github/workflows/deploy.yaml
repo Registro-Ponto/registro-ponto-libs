@@ -26,11 +26,12 @@ jobs:
           version: 8.6.7
           run_install: false
 
-      - run: pnpm install --no-frozen-lockfile
-        shell: bash
-
       # Manual Checkout
       - uses: actions/checkout@v4
+
+      # Install required dependencies to build icons and illustrations
+      - run: pnpm install --no-frozen-lockfile
+        shell: bash
 
       # Set up Node
       - uses: actions/setup-node@v4
