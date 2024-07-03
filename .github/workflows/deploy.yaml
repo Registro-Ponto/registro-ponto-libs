@@ -1,5 +1,8 @@
 # https://storybook.js.org/docs/sharing/publish-storybook#github-pages
 
+environment:
+  name: github-pages
+
 # Workflow name
 name: Build and Publish Storybook to GitHub Pages
 
