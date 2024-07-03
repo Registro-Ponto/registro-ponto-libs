@@ -11,6 +11,8 @@
   "scripts": {
     "build-icons": "rimraf ./rp-icons/icons ./optimized/icons && svgo --config=svgo.icons.mjs -f ./src/icons -o ./optimized/icons --pretty --indent=2 && node ./scripts/build.js icons",
     "build-illustrations": "rimraf ./rp-illustrations/illustrations ./optimized/illustrations && svgo --config=svgo.illustrations.mjs -f ./src/illustrations -o ./optimized/illustrations --pretty --indent=2 && node ./scripts/build.js illustrations",
+    "install-storybook": "cd ./apps/next-storybook/ && pnpm install",
+    "build-storybook": "cd ./apps/next-storybook/ && pnpm run build-storybook",
     "release-channel": "node ./scripts/release-channel.js",
     "release-notes": "node ./scripts/release-notes.js"
   },
