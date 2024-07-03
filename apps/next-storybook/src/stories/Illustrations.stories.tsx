@@ -10,15 +10,12 @@ type IllustrationProps = {
 const Component = ({ size }: IllustrationProps) => {
   return (
     <div className="grid grid-cols-8 gap-2">
-      {Object.entries(illustrations).map(([illustrationName, Illustration]) => {
-        console.log(Illustration)
-        return (
-          <div key={illustrationName} style={{height: size, width: size}} className="flex flex-col items-center gap-2">
-            <Illustration width={size} height={size} />
-            <span className="text-4xs">{illustrationName}</span>
-          </div>
-        )
-      })}
+      {Object.entries(illustrations).map(([illustrationName, Illustration]) => (
+        <div key={illustrationName} className="flex flex-col items-center gap-2">
+          <Illustration width={size} height={size} />
+          <span className="text-4xs">{illustrationName}</span>
+        </div>
+      ))}
     </div>
   )
 }
