@@ -5,33 +5,33 @@
 </div>
 
 <p align="center">
-  <a href="https://registroponto.com.br/" target="_blank">Registro Ponto's</a> illustration library offers a collection of intuitive illustrations<br /> designed to facilitate the navigation and usability of time management systems.
+  A biblioteca de ilustrações do <a href="https://registroponto.com.br/" target="_blank">Registro Ponto</a> oferece uma coleção de ilustrações intuitivas projetadas para facilitar a navegação e a usabilidade dos sistemas de gestão de ponto.
 <p>
 
 <div align="center">
 
-  [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/Registro-Ponto/registro-ponto-libs/edit/main/rp-illustrations/README.pt-br.md)
+  [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Registro-Ponto/registro-ponto-libs/blob/main/rp-illustrations/README.md)
 
 </div>
 
 <p align="center">
-  <a href=""><strong>See illustrations</strong></a>
+  <a href=""><strong>Ver ilustrações</strong></a>
 </p>
 
-## How to use
+## Como usar
 
-First, install `@registroponto/illustrations` from npm:
+Primeiramente, instale `@registroponto/illustrations` pelo npm:
 
 ```sh
 npm install @registroponto/illustrations
 ```
 
-Now we can import each illustration as a component:
+Agora podemos importar cada ilustração como um componente:
 
 ```js
 import { AlertError } from '@registroponto/illustrations'
 
-function Example() {
+function Exemplo() {
   return (
     <div>
       <AlertError width={192} height={192} />
