@@ -15,7 +15,7 @@
 </div>
 
 <p align="center">
-  <a href="templinkparastorybook"><strong>See icons</strong></a>
+  <a href=""><strong>See icons</strong></a>
 </p>
 
 The icons are pre-configured to be styled via the `color` CSS property. This can be done either manually or by using utility classes such as `text-gray-500` from frameworks like [Tailwind CSS](https://tailwindcss.com).
