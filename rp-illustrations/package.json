@@ -1,0 +1,27 @@
+{
+  "name": "@rp/illustrations",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "files": [
+    "illustrations",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "main": "./illustrations/index.js",
+  "exports": {
+    ".": {
+      "types": "./illustrations/index.d.ts",
+      "import": "./illustrations/esm/index.js",
+      "require": "./illustrations/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">= 16"
+  }
+}

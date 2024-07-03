@@ -1,0 +1,27 @@
+{
+  "name": "@rp/icons",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "files": [
+    "icons",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "main": "./icons/index.js",
+  "exports": {
+    ".": {
+      "types": "./icons/index.d.ts",
+      "import": "./icons/esm/index.js",
+      "require": "./icons/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">= 16"
+  }
+}

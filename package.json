@@ -1,0 +1,26 @@
+{
+  "name": "registro-ponto-libs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "icons",
+    "illustrations",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build-icons": "rimraf ./rp-icons/icons ./optimized/icons && svgo --config=svgo.icons.mjs -f ./src/icons -o ./optimized/icons --pretty --indent=2 && node ./scripts/build.js icons",
+    "build-illustrations": "rimraf ./rp-illustrations/illustrations ./optimized/illustrations && svgo --config=svgo.illustrations.mjs -f ./src/illustrations -o ./optimized/illustrations --pretty --indent=2 && node ./scripts/build.js illustrations",
+    "release-channel": "node ./scripts/release-channel.js",
+    "release-notes": "node ./scripts/release-notes.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@svgr/core": "^5.5.0",
+    "camelcase": "^6.0.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^3.0.2",
+    "svgo": "^3.0.2"
+  }
+}
