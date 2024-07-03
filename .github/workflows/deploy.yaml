@@ -43,5 +43,5 @@ jobs:
         with:
           install_command: pnpm install-storybook # default: npm ci
           build_command: pnpm build-storybook # default: npm run build-storybook
-          path: apps\next-storybook\storybook-static # default: dist/storybook
+          path: apps/next-storybook/storybook-static # default: dist/storybook
           checkout: false # default: true
