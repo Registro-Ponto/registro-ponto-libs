@@ -1,0 +1,48 @@
+# https://storybook.js.org/docs/sharing/publish-storybook#github-pages
+
+# Workflow name
+name: Build and Publish Storybook to GitHub Pages
+
+on:
+  # Event for the workflow to run on
+  push:
+    branches:
+      - 'main'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    # Job steps
+    steps:
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8.6.7
+          run_install: false
+
+      # Manual Checkout
+      - uses: actions/checkout@v4
+
+      # Install required dependencies to build icons and illustrations
+      - run: pnpm install --no-frozen-lockfile
+        shell: bash
+
+      # Set up Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+
+      #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
+      - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+        with:
+          install_command: pnpm install-storybook # default: npm ci
+          build_command: pnpm build-storybook # default: npm run build-storybook
+          path: apps/next-storybook/storybook-static # default: dist/storybook
+          checkout: false # default: true

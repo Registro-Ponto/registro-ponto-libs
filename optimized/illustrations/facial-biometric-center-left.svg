@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
-  <g clip-path="url(#a)">
-    <g clip-path="url(#b)">
-      <g clip-path="url(#c)">
+  <g clip-path="url(#facial-biometric-center-lefta)">
+    <g clip-path="url(#facial-biometric-center-left2b)">
+      <g clip-path="url(#facial-biometric-center-left3c)">
         <path fill="#fff" d="M64 0H0v64h64z"/>
         <path fill="#172554" d="M30.69 36.867A14.996 14.996 0 0 0 45.686 21.87c0-8.879-8.108-14.5-14.996-14.995-4.94-.355-11.249 1.782-13.934 6.934-1.738 3.34-1.278 6.646-1.061 8.061.886 5.763 5.708 14.996 14.995 14.996"/>
         <path fill="#000" d="M17.26 27.976a.35.35 0 0 1-.322-.212 16.4 16.4 0 0 1-1.096-3.619 19 19 0 0 1 .3-7.813c.705-2.786 1.985-5.093 3.705-6.67 2.484-2.275 6.265-3.36 10.376-2.974 4.364.411 8.682 2.42 12.155 5.662a.353.353 0 0 1-.079.598.35.35 0 0 1-.399-.084c-3.362-3.136-7.532-5.08-11.744-5.477-3.914-.367-7.498.65-9.834 2.794-2.594 2.375-4.886 7.722-3.788 13.839a15.6 15.6 0 0 0 1.049 3.466.35.35 0 0 1-.182.46.4.4 0 0 1-.14.03"/>
@@ -25,13 +25,13 @@
     <path stroke="#CBD5E1" d="M.5 32C.5 14.603 14.603.5 32 .5S63.5 14.603 63.5 32 49.397 63.5 32 63.5.5 49.397.5 32Z"/>
   </g>
   <defs>
-    <clipPath id="a">
+    <clipPath id="facial-biometric-center-lefta">
       <path fill="#fff" d="M0 0h64v64H0z"/>
     </clipPath>
-    <clipPath id="b">
+    <clipPath id="facial-biometric-center-left2b">
       <path fill="#fff" d="M0 32C0 14.327 14.327 0 32 0s32 14.327 32 32-14.327 32-32 32S0 49.673 0 32"/>
     </clipPath>
-    <clipPath id="c">
+    <clipPath id="facial-biometric-center-left3c">
       <path fill="#fff" d="M0 0h64v64H0z"/>
     </clipPath>
   </defs>

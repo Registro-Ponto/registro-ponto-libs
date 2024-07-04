@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import * as icons from '../../../../react/icons/'
+import * as icons from '../../../../rp-icons/icons/'
 
 type IconProps = { className: string, size: number }
 

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
-  <g clip-path="url(#a)">
+  <g clip-path="url(#default-avatara)">
     <path fill="#DCEBFD" d="M0 0h32v32H0z"/>
-    <g clip-path="url(#b)">
+    <g clip-path="url(#default-avatar2b)">
       <path fill="#FDA894" d="m13.627 18.754.56 11.975 6.278-.293-.454-9.726-1.613-.495z"/>
       <path fill="#BF3131" d="M13.97 21.089s.57 1.5 2.256 2.485c1.037.604 2.758.372 3.924.104l-.139-2.967-1.613-.496c-2.07.38-4.427.874-4.427.874"/>
       <path fill="#FDA894" d="M17.46 7.148c1.19.196 2.179.995 3.051 1.808.947.88 1.437 1.966 1.65 3.267.165 1.024.146 2.07.075 3.104-.089 1.36-.412 2.355-.871 3.633-.46 1.277-1.361 2.296-2.446 3.067-2.121 1.501-4.714.413-6.08-1.56-1.728-2.494-2.139-5.08-1.94-8.129.065-.99.216-2.014.752-2.835.692-1.058 1.906-1.602 3.086-1.987.871-.284 1.788-.514 2.694-.371z"/>
@@ -23,10 +23,10 @@
     </g>
   </g>
   <defs>
-    <clipPath id="a">
+    <clipPath id="default-avatara">
       <path fill="#fff" d="M0 0h32v32H0z"/>
     </clipPath>
-    <clipPath id="b">
+    <clipPath id="default-avatar2b">
       <path fill="#fff" d="M-38.049 1.354h84.905v113.662h-84.905z"/>
     </clipPath>
   </defs>
