@@ -9,7 +9,12 @@
     "LICENSE"
   ],
   "scripts": {
-    "build-icons": "rimraf ./rp-icons/icons ./optimized/icons && svgo --config=svgo.icons.mjs -f ./src/icons -o ./optimized/icons --pretty --indent=2 && node ./scripts/build.js icons",
+    "storybook": "cd ./apps/next-storybook/ && pnpm run storybook",
+    "clean-icons": "rimraf ./rp-icons/icons ./optimized/icons",
+    "current-color-icons": "svgo --config=svgo.current-color-icons.mjs -f ./src/icons/current-color -o ./optimized/icons --pretty --indent=2",
+    "fixed-color-icons": "svgo --config=svgo.fixed-color-icons.mjs -f ./src/icons/fixed-color -o ./optimized/icons --pretty --indent=2",
+    "generate-icons": "node ./scripts/build.js icons",
+    "build-icons": "pnpm clean-icons && pnpm current-color-icons && pnpm fixed-color-icons && pnpm generate-icons",
     "build-illustrations": "rimraf ./rp-illustrations/illustrations ./optimized/illustrations && svgo --config=svgo.illustrations.mjs -f ./src/illustrations -o ./optimized/illustrations --pretty --indent=2 && node ./scripts/build.js illustrations",
     "install-storybook": "cd ./apps/next-storybook/ && pnpm install",
     "build-storybook": "pnpm build-icons && pnpm build-illustrations && cd ./apps/next-storybook/ && pnpm run build-storybook",
