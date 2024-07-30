@@ -5,6 +5,14 @@ let path = require('path')
 let fs = require('fs')
 
 /**
+ * Normalize newlines in the changelog string, fixes issue when running on Windows.
+ * Doesn't do anything in CI but I think it's good to have it here so we don't waste time again in the future.
+ */
+function normalizeNewlines(text) {
+  return text.replace(/\r\n/g, '\n').replace(/\r/g, '\n')
+}
+
+/**
  * @typedef {"rp-icons" | "rp-illustrations"} PackageType
  */
 
@@ -23,7 +31,9 @@ let version = process.env.npm_package_version || require(`../${packageType}/pack
  * Reads the CHANGELOG.md file for a given {@link PackageType} and extracts the changelog entry for a specified version.
  * @description The changelog for the current package version.
  */
-let changelog = fs.readFileSync(path.resolve(__dirname, '..', packageType, 'CHANGELOG.md'), 'utf8')
+const changelog = normalizeNewlines(
+  fs.readFileSync(path.resolve(__dirname, '..', packageType, 'CHANGELOG.md'), 'utf8')
+)
 
 /**
  * Whether the version is in the changelog for the current package @see {@link PackageType}
