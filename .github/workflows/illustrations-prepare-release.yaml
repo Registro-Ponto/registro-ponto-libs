@@ -4,8 +4,7 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - 'v*'
-      - 'illustrations'
+      - 'illustrations-v*.*.*'
 
 env:
   CI: true
