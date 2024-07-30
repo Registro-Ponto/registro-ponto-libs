@@ -3,4 +3,5 @@
 !.gitignore
 !package.json
 !README*.md
+!CHANGELOG.md
 
