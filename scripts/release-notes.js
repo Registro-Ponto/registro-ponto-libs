@@ -4,10 +4,30 @@
 let path = require('path')
 let fs = require('fs')
 
-let version =
-  process.argv[2] || process.env.npm_package_version || require('../package.json').version
+/**
+ * @typedef {"rp-icons" | "rp-illustrations"} PackageType
+ */
 
-let changelog = fs.readFileSync(path.resolve(__dirname, '..', 'CHANGELOG.md'), 'utf8')
+/**
+ * @see {@link PackageType}
+ */
+const packageType = process.argv[2]
+
+if (!['rp-icons', 'rp-illustrations'].includes(packageType)) {
+  throw new Error('Invalid package type. Must be "rp-icons" or "rp-illustrations".')
+}
+
+let version = process.env.npm_package_version || require(`../${packageType}/package.json`).version
+
+/**
+ * Reads the CHANGELOG.md file for a given {@link PackageType} and extracts the changelog entry for a specified version.
+ * @description The changelog for the current package version.
+ */
+let changelog = fs.readFileSync(path.resolve(__dirname, '..', packageType, 'CHANGELOG.md'), 'utf8')
+
+/**
+ * Whether the version is in the changelog for the current package @see {@link PackageType}
+ */
 let match = new RegExp(
   `## \\[${version}\\] - (.*)\\n\\n([\\s\\S]*?)\\n(?:(?:##\\s)|(?:\\[))`,
   'g'
