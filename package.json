@@ -21,7 +21,7 @@
     "icons-release-channel": "node ./scripts/release-channel.js rp-icons",
     "illustrations-release-channel": "node ./scripts/release-channel.js rp-illustrations",
     "icons-release-notes": "node ./scripts/release-notes.js rp-icons",
-    "ilustrations-release-notes": "node ./scripts/release-notes.js rp-illustrations"
+    "illustrations-release-notes": "node ./scripts/release-notes.js rp-illustrations"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
