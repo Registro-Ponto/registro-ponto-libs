@@ -3,8 +3,6 @@ name: Release
 on:
   release:
     types: [published]
-    tags:
-      - 'icons'
 
 permissions:
   contents: read
@@ -39,18 +37,41 @@ jobs:
           restore-keys: |
             nodeModules-
 
-      - name: Install dependencies
+      - name: Install dependencies if cache wasn't found
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm install
 
-      - name: Calculate environment variables for icons
+      - name: Determine release type and channel
+        id: determine-release
         run: |
-          echo "RELEASE_CHANNEL=$(npm run icons-release-channel --silent)" >> $GITHUB_ENV
+          TAG_NAME=${{ github.event.release.tag_name }}
+          if [[ "${TAG_NAME}" == illustrations-v*.*.* ]]; then
+            echo "RELEASE_CHANNEL=${TAG_NAME}" >> $GITHUB_ENV
+            echo "RELEASE_TYPE=illustrations" >> $GITHUB_ENV
+          elif [[ "${TAG_NAME}" == icons-v*.*.* ]]; then
+            echo "RELEASE_CHANNEL=${TAG_NAME}" >> $GITHUB_ENV
+            echo "RELEASE_TYPE=icons" >> $GITHUB_ENV
+          else
+            echo "Unrecognized tag format."
+            exit 1
+          fi
+
+      - name: Build illustrations
+        if: env.RELEASE_TYPE == 'illustrations'
+        run: npm run build-illustrations
 
       - name: Build icons
+        if: env.RELEASE_TYPE == 'icons'
         run: npm run build-icons
 
+      - name: Publish `@registroponto/illustrations`
+        if: env.RELEASE_TYPE == 'illustrations'
+        run: npm publish ./rp-illustrations --provenance --tag ${{ env.RELEASE_CHANNEL }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Publish `@registroponto/icons`
+        if: env.RELEASE_TYPE == 'icons'
         run: npm publish ./rp-icons --provenance --tag ${{ env.RELEASE_CHANNEL }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
