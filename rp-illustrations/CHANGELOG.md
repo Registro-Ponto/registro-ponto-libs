@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [1.0.2] - 2024-08-16
+
+### Added
+
+- Illustration: "woman-waving"
+
 ## [1.0.1] - 2024-07-11
 
 ### Fixed
@@ -19,5 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial illustrations
 
+[1.0.2]: https://github.com/Registro-Ponto/registro-ponto-libs/commit/5906c046d7bfe3ac7a2a88dc209a9cd9bdea1507
 [1.0.1]: https://github.com/Registro-Ponto/registro-ponto-libs/commit/0faa9def09cdb37e58e15fb404b71ffc74508c45
 [1.0.0]: https://github.com/Registro-Ponto/registro-ponto-libs/commit/4ee0e2dfcf52c7d650e57d2fc4b309d0603c94a0
