@@ -49,7 +49,7 @@ jobs:
             echo "RELEASE_CHANNEL=$(npm run illustrations-release-channel --silent)" >> $GITHUB_ENV
             echo "RELEASE_TYPE=illustrations" >> $GITHUB_ENV
           elif [[ "${TAG_NAME}" == icons-v*.*.* ]]; then
-            echo "RELEASE_CHANNEL=${TAG_NAME}" >> $GITHUB_ENV
+            echo "RELEASE_CHANNEL=$(npm run icons-release-channel --silent)" >> $GITHUB_ENV
             echo "RELEASE_TYPE=icons" >> $GITHUB_ENV
           else
             echo "Unrecognized tag format."
