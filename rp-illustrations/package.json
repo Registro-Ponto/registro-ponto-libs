@@ -21,6 +21,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Registro-Ponto/registro-ponto-libs"
+  },
   "peerDependencies": {
     "react": ">= 16"
   }
