@@ -22,4 +22,8 @@ let version = process.env.npm_package_version || require(`../${packageType}/pack
 
 let match = /\d+\.\d+\.\d+-(.*)\.\d+/g.exec(version)
 
-console.log(`${packageTypeWithoutPrefix}-${match ? match[1] : 'latest'}`)
+if (match) {
+  console.log(match[1])
+} else {
+  console.log('latest')
+}
