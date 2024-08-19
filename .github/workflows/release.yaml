@@ -46,7 +46,7 @@ jobs:
         run: |
           TAG_NAME=${{ github.event.release.tag_name }}
           if [[ "${TAG_NAME}" == illustrations-v*.*.* ]]; then
-            echo "RELEASE_CHANNEL=${TAG_NAME}" >> $GITHUB_ENV
+            echo "RELEASE_CHANNEL=$(npm run illustrations-release-channel --silent)" >> $GITHUB_ENV
             echo "RELEASE_TYPE=illustrations" >> $GITHUB_ENV
           elif [[ "${TAG_NAME}" == icons-v*.*.* ]]; then
             echo "RELEASE_CHANNEL=${TAG_NAME}" >> $GITHUB_ENV
