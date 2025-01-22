@@ -20,19 +20,20 @@ jobs:
         node-version: [18]
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: 'https://registry.npmjs.org'
-          cache: 'pnpm'
+          version: 8.6.7
+          run_install: false
 
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v4
+
+      - run: pnpm install --no-frozen-lockfile
+        shell: bash
+
+      - uses: actions/setup-node@v4
         with:
-          version: 9
+          node-version: '18.x'
 
       - name: Install dependencies
         run: pnpm install
