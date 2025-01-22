@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [1.0.6] - 2025-01-22
+
+### Added
+
+- Illustration: "ThumbsUpApproving"
+
 ## [1.0.5] - 2024-11-12
 
 ### Added
@@ -44,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial illustrations
 
+[1.0.6]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.6
 [1.0.5]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.5
 [1.0.4]: https://github.com/Registro-Ponto/registro-ponto-libs/commit/63afa81b9b0e5dae2caa9c131b5feb54b6eab38b
 [1.0.3]: https://github.com/Registro-Ponto/registro-ponto-libs/commit/9d055363ad8712846af5484e63c8e32ecb13d6f0
