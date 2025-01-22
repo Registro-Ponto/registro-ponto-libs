@@ -22,34 +22,30 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
+          cache: 'pnpm'
 
-      - name: Use cached node_modules
-        id: cache
-        uses: actions/cache@v3
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
         with:
-          path: node_modules
-          key: nodeModules-${{ hashFiles('**/package-lock.json') }}-${{ matrix.node-version }}
-          restore-keys: |
-            nodeModules-
+          version: 9
 
-      - name: Install dependencies if cache wasn't found
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: npm install
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Determine release type and channel
         id: determine-release
         run: |
           TAG_NAME=${{ github.event.release.tag_name }}
           if [[ "${TAG_NAME}" == illustrations-v*.*.* ]]; then
-            echo "RELEASE_CHANNEL=$(npm run illustrations-release-channel --silent)" >> $GITHUB_ENV
+            echo "RELEASE_CHANNEL=$(pnpm run illustrations-release-channel --silent)" >> $GITHUB_ENV
             echo "RELEASE_TYPE=illustrations" >> $GITHUB_ENV
           elif [[ "${TAG_NAME}" == icons-v*.*.* ]]; then
-            echo "RELEASE_CHANNEL=$(npm run icons-release-channel --silent)" >> $GITHUB_ENV
+            echo "RELEASE_CHANNEL=$(pnpm run icons-release-channel --silent)" >> $GITHUB_ENV
             echo "RELEASE_TYPE=icons" >> $GITHUB_ENV
           else
             echo "Unrecognized tag format."
@@ -58,20 +54,20 @@ jobs:
 
       - name: Build illustrations
         if: env.RELEASE_TYPE == 'illustrations'
-        run: npm run build-illustrations
+        run: pnpm run build-illustrations
 
       - name: Build icons
         if: env.RELEASE_TYPE == 'icons'
-        run: npm run build-icons
+        run: pnpm run build-icons
 
       - name: Publish `@registroponto/illustrations`
         if: env.RELEASE_TYPE == 'illustrations'
-        run: npm publish ./rp-illustrations --provenance --tag ${{ env.RELEASE_CHANNEL }}
+        run: pnpm publish ./rp-illustrations --provenance --tag ${{ env.RELEASE_CHANNEL }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish `@registroponto/icons`
         if: env.RELEASE_TYPE == 'icons'
-        run: npm publish ./rp-icons --provenance --tag ${{ env.RELEASE_CHANNEL }}
+        run: pnpm publish ./rp-icons --provenance --tag ${{ env.RELEASE_CHANNEL }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
