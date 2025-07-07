@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [1.0.7] - 2025-07-07
+
+### Added
+
+- Illustration: "WomanInsdeMagnifyingGlass"
+
 ## [1.0.6] - 2025-01-22
 
 ### Added
@@ -50,6 +56,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial illustrations
 
+[1.0.7]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.7
 [1.0.6]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.6
 [1.0.5]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.5
 [1.0.4]: https://github.com/Registro-Ponto/registro-ponto-libs/commit/63afa81b9b0e5dae2caa9c131b5feb54b6eab38b
