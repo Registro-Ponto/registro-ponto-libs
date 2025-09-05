@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [1.0.8] - 2025-09-05
+
+### Changed
+
+- Optimized existing illustrations for better performance
+
 ## [1.0.7] - 2025-07-07
 
 ### Added
@@ -56,6 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial illustrations
 
+[1.0.8]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.8
 [1.0.7]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.7
 [1.0.6]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.6
 [1.0.5]: https://github.com/Registro-Ponto/registro-ponto-libs/releases/tag/illustrations-v1.0.5
