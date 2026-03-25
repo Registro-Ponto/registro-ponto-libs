@@ -58,9 +58,3 @@ export const CustomSize: StoryObj<IconProps> = {
     },
   },
 }
-
-test()
-
-function test() {
-  return 4
-}

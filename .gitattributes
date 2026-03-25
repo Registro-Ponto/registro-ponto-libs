@@ -1,0 +1,2 @@
+# Force LF line endings for all text files to avoid CRLF/LF diffs on rebuild
+* text=auto eol=lf

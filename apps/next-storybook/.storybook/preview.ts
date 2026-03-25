@@ -4,6 +4,11 @@ import "../src/globals.css"
 
 const preview: Preview = {
   parameters: {
+    options: {
+      storySort: {
+        order: ['Introdução', 'Contribuindo', 'Components'],
+      },
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,

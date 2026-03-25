@@ -1,0 +1,84 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="Introdução" />
+
+# Registro Ponto Libraries
+
+Bibliotecas de **ícones** e **ilustrações** em React para os produtos [Registro Ponto](https://registroponto.com.br/).
+Todos os assets possuem design moderno e sofisticado, pensados para sistemas de gestão de ponto e aplicações de recursos humanos.
+
+---
+
+## Pacotes disponíveis
+
+| Pacote | npm | Descrição |
+|--------|-----|-----------|
+| `@registroponto/icons` | [![npm](https://img.shields.io/npm/v/@registroponto/icons)](https://www.npmjs.com/package/@registroponto/icons) | Ícones em React com suporte a `currentColor` e cores fixas |
+| `@registroponto/illustrations` | [![npm](https://img.shields.io/npm/v/@registroponto/illustrations)](https://www.npmjs.com/package/@registroponto/illustrations) | Ilustrações em React com cores originais preservadas |
+
+---
+
+## Instalação
+
+```sh
+# Ícones
+npm install @registroponto/icons
+
+# Ilustrações
+npm install @registroponto/illustrations
+```
+
+Ambos os pacotes possuem `react >= 16` como peer dependency.
+
+---
+
+## Links
+
+- [Repositório no GitHub](https://github.com/Registro-Ponto/registro-ponto-libs)
+- [`@registroponto/icons` no npm](https://www.npmjs.com/package/@registroponto/icons)
+- [`@registroponto/illustrations` no npm](https://www.npmjs.com/package/@registroponto/illustrations)
+
+---
+
+## Uso básico
+
+### Ícones
+
+```tsx
+import { Adjustments } from '@registroponto/icons'
+
+function Example() {
+  return <Adjustments width={24} height={24} />
+}
+```
+
+Ícones do tipo **current-color** herdam a cor do texto via CSS — basta aplicar `color` ou uma classe como `className="text-blue-800"`.
+
+Ícones do tipo **fixed-color** mantêm suas cores originais (ex: logo do Google).
+
+### Ilustrações
+
+```tsx
+import { AlertError } from '@registroponto/illustrations'
+
+function Example() {
+  return <AlertError width={192} height={192} />
+}
+```
+
+---
+
+## Props dos componentes
+
+Todos os componentes são `React.forwardRef` de `<svg>`, então aceitam:
+
+| Prop | Tipo | Descrição |
+|------|------|-----------|
+| `width` | `number \| string` | Largura do SVG |
+| `height` | `number \| string` | Altura do SVG |
+| `title` | `string` | Título acessível (gera um `<title>` dentro do SVG) |
+| `titleId` | `string` | ID do elemento `<title>` para `aria-labelledby` |
+| `className` | `string` | Classe CSS (útil para Tailwind) |
+| `ref` | `Ref<SVGSVGElement>` | Ref do SVG |
+
+Além dessas, qualquer prop nativa de `<svg>` é aceita (ex: `onClick`, `style`, `aria-label`).

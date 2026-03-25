@@ -1,0 +1,88 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="Contribuindo" />
+
+# Como contribuir
+
+Guia para adicionar, atualizar ou depreciar ícones e ilustrações.
+
+---
+
+## Adicionando um novo ícone
+
+1. Exporte o SVG da sua ferramenta de design.
+2. Coloque o arquivo na pasta correta:
+   - **`src/icons/current-color/`** — ícones monocromáticos que herdam a cor do texto via CSS.
+   - **`src/icons/fixed-color/`** — ícones que devem manter suas cores originais.
+3. Nomeie o arquivo em **kebab-case** (ex: `arrow-left.svg`). O nome vira o componente em PascalCase (`ArrowLeft`).
+4. Rode o build e confira no Storybook:
+
+```sh
+npm run build-icons
+npm run storybook
+```
+
+5. Atualize a versão em `rp-icons/package.json`.
+6. Documente no `rp-icons/CHANGELOG.md`.
+
+---
+
+## Adicionando uma nova ilustração
+
+1. Exporte o SVG da sua ferramenta de design.
+2. Coloque o arquivo em **`src/illustrations/`** usando **kebab-case** (ex: `boy-with-calendar.svg`).
+3. Rode o build e confira:
+
+```sh
+npm run build-illustrations
+npm run storybook
+```
+
+4. Atualize a versão em `rp-illustrations/package.json`.
+5. Documente no `rp-illustrations/CHANGELOG.md`.
+
+---
+
+## Depreciando um ícone ou ilustração
+
+Adicione o nome do arquivo SVG (ex: `old-icon.svg`) ao array em `scripts/deprecated.js`.
+O componente gerado vai receber a anotação `@deprecated` no JSDoc, e os editores vão exibi-lo como riscado.
+
+---
+
+## Como funciona o build
+
+O pipeline de build segue 3 etapas:
+
+### 1. SVGs fonte (`src/`)
+Os arquivos SVG originais ficam organizados em:
+- `src/icons/current-color/` — ícones que usam `currentColor`
+- `src/icons/fixed-color/` — ícones com cores fixas
+- `src/illustrations/` — ilustrações
+
+### 2. Otimização SVGO (`optimized/`)
+O [SVGO](https://github.com/svg/svgo) processa os SVGs com configs específicas:
+- **current-color**: remove atributos `fill` e aplica `fill="currentColor"`
+- **fixed-color**: preserva fills originais
+- **illustrations**: preserva viewBox e prefixa IDs internos para evitar colisões
+
+### 3. Geração de componentes React
+O `scripts/build.js` usa [@svgr/core](https://react-svgr.com/) + Babel para gerar componentes React com:
+- Formato **CJS** (`rp-{pacote}/{pacote}/`)
+- Formato **ESM** (`rp-{pacote}/{pacote}/esm/`)
+- Declarações **TypeScript** (`.d.ts`)
+
+---
+
+## Deploy
+
+### Storybook → GitHub Pages
+Todo push na branch `main` publica automaticamente o Storybook no GitHub Pages.
+
+### Pacotes → npm
+1. Atualize a versão e o CHANGELOG.
+2. Crie uma tag git: `icons-v1.0.10` ou `illustrations-v1.0.9`.
+3. O workflow **Prepare Release** cria um rascunho de release no GitHub.
+4. Ao publicar o rascunho, o workflow **Release** builda e publica no npm.
+
+Canais de pré-release (`alpha`, `insiders`) são detectados automaticamente pela versão (ex: `1.0.0-alpha.1` → tag `alpha` no npm).
