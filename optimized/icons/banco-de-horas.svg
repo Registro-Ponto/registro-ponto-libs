@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-labelledby="banco-de-horas-title banco-de-horas-desc" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <desc>
+    Relógio amplo com indicadores de saldo positivo e negativo para banco de horas.
+  </desc>
+  <circle cx="10.5" cy="12" r="6.2"/>
+  <path d="M10.5 8.7v3.6l2.4 1.4M17.8 6.2H21m-1.6-1.6v3.2M17.8 18H21M5.2 20.3h10.6"/>
+</svg>

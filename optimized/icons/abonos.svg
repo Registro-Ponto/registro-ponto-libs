@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-labelledby="abonos-title abonos-desc" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <desc>
+    Documento de abono com selo e confirmação para aprovação de descanso ou período abonado.
+  </desc>
+  <path d="M6 3.8h9.2l3.3 3.3v12.2a1.7 1.7 0 0 1-1.7 1.7H6a1.7 1.7 0 0 1-1.7-1.7V5.5A1.7 1.7 0 0 1 6 3.8"/>
+  <path d="M15 3.8V7h3.5M7.5 9h6m-6 3h4"/>
+  <circle cx="14.8" cy="15.8" r="3.1"/>
+  <path d="m13.3 15.8 1 1 2-2.2"/>
+</svg>

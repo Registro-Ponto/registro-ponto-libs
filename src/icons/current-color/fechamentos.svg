@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="fechamentos-title fechamentos-desc">
+  <title id="fechamentos-title">Fechamentos</title>
+  <desc id="fechamentos-desc">Prancheta com conferência e cadeado, representando o fechamento da folha de ponto.</desc>
+  <path d="M8.5 4.5h7A2.5 2.5 0 0 1 18 7v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2.5 2.5 0 0 1 2.5-2.5h2"/>
+  <path d="M8.5 4.5a2.5 2.5 0 0 1 5 0"/>
+  <path d="M8 11.2l2 2 4-4.3"/>
+  <path d="M14.2 17v-1.3a2 2 0 0 1 4 0V17"/>
+  <rect x="13.2" y="17" width="6" height="4" rx="1"/>
+</svg>

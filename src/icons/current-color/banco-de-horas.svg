@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="banco-de-horas-title banco-de-horas-desc">
+  <title id="banco-de-horas-title">Banco de horas</title>
+  <desc id="banco-de-horas-desc">Relógio amplo com indicadores de saldo positivo e negativo para banco de horas.</desc>
+  <circle cx="10.5" cy="12" r="6.2"/>
+  <path d="M10.5 8.7v3.6l2.4 1.4"/>
+  <path d="M17.8 6.2h3.2M19.4 4.6v3.2"/>
+  <path d="M17.8 18h3.2"/>
+  <path d="M5.2 20.3h10.6"/>
+</svg>

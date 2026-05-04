@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="controle-facil-title controle-facil-desc">
+  <title id="controle-facil-title">Controle fácil</title>
+  <desc id="controle-facil-desc">Calendário com marcação e lápis para edição e correção de marcações.</desc>
+  <rect x="3.5" y="4.5" width="15" height="15" rx="2.5"/>
+  <path d="M7.5 2.8v3.4M14.5 2.8v3.4M3.5 8h15"/>
+  <path d="M7.2 11.3h.1M11 11.3h.1M7.2 14.8h.1"/>
+  <path d="M12.6 17.6l4.8-4.8a1.6 1.6 0 0 1 2.3 2.3l-4.8 4.8-3 .7.7-3Z"/>
+  <path d="M16.4 13.8l2.3 2.3"/>
+</svg>
