@@ -1,7 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-labelledby="consultar-ponto-title consultar-ponto-desc" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
-  <desc>
-    Relógio de ponto com linhas de detalhe para consulta das marcações.
-  </desc>
-  <circle cx="8.2" cy="11.8" r="4.4"/>
-  <path d="M8.2 9.3V12l1.9 1.1M15 8h5.5M15 12h5.5M15 16h3.5M5.5 20h8.8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
+  <path fill-rule="evenodd" d="M8 3.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5M1.25 9a6.75 6.75 0 1 1 13.5 0 6.75 6.75 0 0 1-13.5 0M8 5.25a.75.75 0 0 1 .75.75v2.75H11a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1-.75-.75V6A.75.75 0 0 1 8 5.25M15.75 7a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75m0 3a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75m0 3a.75.75 0 0 1 .75-.75H20a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/>
 </svg>
