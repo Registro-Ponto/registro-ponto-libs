@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-labelledby="afastamentos-title afastamentos-desc" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
-  <desc>
-    Colaborador se afastando por uma saída, representando ausência ou período afastado sem usar calendário.
-  </desc>
-  <circle cx="7.2" cy="7" r="3"/>
-  <path d="M3.7 19.2a5.1 5.1 0 0 1 7-4.7M14.2 4.5h4.2A1.6 1.6 0 0 1 20 6.1v11.8a1.6 1.6 0 0 1-1.6 1.6h-4.2M14.2 12h6.3"/>
-  <path d="m17.9 9.4 2.6 2.6-2.6 2.6M10.7 12h5"/>
-</svg>

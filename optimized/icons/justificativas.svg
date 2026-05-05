@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-labelledby="justificativas-title justificativas-desc" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
-  <desc>
-    Balão de mensagem com alerta para justificativas pendentes de aprovação.
-  </desc>
-  <path d="M4.2 6.3a4 4 0 0 1 4-3.3h7.6a4 4 0 0 1 4 4v4.6a4 4 0 0 1-4 4H10l-4.8 3v-3.4a4 4 0 0 1-1-2.6zM12 6.8V11M12 13.9h.01M8.1 10.9h.01m7.79 0h.01"/>
-</svg>

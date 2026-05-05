@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-labelledby="ferias-title ferias-desc" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
-  <desc>
-    Mala de viagem e sol para lançamento de férias do colaborador.
-  </desc>
-  <rect width="14.8" height="10.5" x="4.2" y="9" rx="2"/>
-  <path d="M9 9V7.2A2.2 2.2 0 0 1 11.2 5h1a2.2 2.2 0 0 1 2.2 2.2V9M4.2 13H19M8 9v10.5M15.2 9v10.5"/>
-  <circle cx="18" cy="5" r="2"/>
-  <path d="M18 1.8v.8m0 4.8v.8M14.8 5h.8m4.8 0h.8"/>
-</svg>
